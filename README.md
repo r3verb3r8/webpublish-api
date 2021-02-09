@@ -1,4 +1,4 @@
-Just a lab. Learning node.js
+Just a lab. Learning Express
 ===============================
 
 Routes
