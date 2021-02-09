@@ -39,7 +39,7 @@ router.get("/document", async (req, res, next) => {
 router.get("/document/:id", async (req, res, next) => {
   try {
     let results = await db.SIDocumentID(req.params.id);
-    res.json(results.recordsets);
+    res.json(results.recordsets[0]);
   } catch (error) {
     console.log(error);
     res.sendStatus(500);
