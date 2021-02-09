@@ -8,3 +8,4 @@ Routes
 3. /document/:id
 4. files?
 
+What columns are needed?
