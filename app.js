@@ -19,8 +19,10 @@ app.get("/", (req, res) => {
 app.use("/api", apiRouter);
 
 // Server port
-app.listen(PORT, function (err) {
-  if (err) console.log("Server couldn't start", err);
+app.listen(port, (err) => {
+  if (err) {
+    console.log("Server couldn't start", err);
+  }
   // console.log("Server is running on: http://" + hostname + ":" + PORT);
-  console.log(`Server is running on: http://${hostname}:${port}`);
+  console.log(`Server is listening at: http://${hostname}:${port}`);
 });
