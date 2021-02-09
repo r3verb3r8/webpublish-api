@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const apiRouter = require("./routes/query");
 const PORT = 3000;
+const os = require("os");
+const hostname = os.hostname();
 
 // Import routes
 const postsRoute = require("./routes/posts");
@@ -19,5 +21,5 @@ app.use("/api", apiRouter);
 // Server port
 app.listen(PORT, function (err) {
   if (err) console.log("Server couldn't start", err);
-  console.log("Server is running on: http://ansible:", PORT);
+  console.log("Server is running on: http://" + hostname + ":" + PORT);
 });
