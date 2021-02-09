@@ -1,3 +1,9 @@
-Just a lab for learning node.js
+Just a lab. Learning node.js
 ===============================
+
+Routes
+------
+1. /case
+2. /document
+3. /document/:id
 
