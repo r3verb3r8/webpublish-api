@@ -23,6 +23,5 @@ app.listen(port, (err) => {
   if (err) {
     console.log("Server couldn't start", err);
   }
-  // console.log("Server is running on: http://" + hostname + ":" + PORT);
   console.log(`Server is listening at: http://${hostname}:${port}`);
 });
