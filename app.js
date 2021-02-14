@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const apiRouter = require("./routes/query");
-const port = 3000;
+const port = 5000;
 const os = require("os");
 const hostname = os.hostname();
 
