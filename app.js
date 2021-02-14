@@ -13,6 +13,7 @@ const postsRoute = require("./routes/posts");
 //   origin: "http://192.168.50.164:3000",
 //   optionsSuccessStatus: 200,
 // };
+
 // Middlewares
 app.use(cors());
 app.use(express.json());
